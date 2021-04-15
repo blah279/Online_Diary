@@ -1,0 +1,35 @@
+<html>
+
+<head>
+  <title>Devan's diary</title>
+  <link rel="icon" href="diary.png" type="image/gif" sizes="16x16">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+  <script src="https://unpkg.com/ml5@0.4.3/dist/ml5.min.js"></script>
+ 
+  <link rel="stylesheet" type="text/css" href="style.css">
+
+</head>
+<body>
+    <button class="fa fa-home" onclick="go_home()">Home</button>
+<Center>
+    <h2 id="nanna1"></h2>
+    <br><br><br>
+    <label for="day1">Day</label>
+    <input type="number" max="31" min="01"  id="day1" required><span>
+     <label for="mon1">Month</label>
+    <input type="number" max="12" min="01"  id="mon1" required></span><span>
+      <label for="yea1">Year</label>
+    <input type="number" max="2030" min="2021"  id="yea1" required></span><BR><BR></BR></BR>
+    <p style="font-size: 20px;color: red;" id="blah1"></p>
+    
+    <button class="btn btn-warning" style="width: 300px;margin-bottom: 20px;" onclick="get()">Get Text</button><br><br>
+    <textarea id="text1" cols="150" rows="25" readonly></textarea>
+</Center>
+<script src="second.js"></script>
+</body>
+</html>
